@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM ADMIN 
+    $sql = "SELECT * FROM ADMINS
             WHERE email = '$username' 
             AND pass = '$password'";
 
@@ -38,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
+    
 
 <div class="login-box">
 
